@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="main">
+            <div class="calculator">
+
+                    <input type="text" class="display">
+                
+                
+                <div class="sp">
+                    <input type="text" readonly value="AC" id="ac">
+                    <input type="text" readonly value="DE" id="de">
+                    <input type="text" readonly value="." onclick="addvalue('.')">
+                    <input type="text" readonly value="/" onclick="addvalue('/')">
+                </div>
+                <div class="sp ">
+                    <input type="text" readonly value="7" onclick="addvalue('7')">
+                    <input type="text" readonly value="8" onclick="addvalue('8')" ">
+                    <input type="text" readonly value="9" onclick="addvalue('9')" ">
+                    <input type="text" readonly value="*" onclick="addvalue('*')" ">
+                </div>
+                <div class="sp ">
+                    <input type="text" readonly value="4" onclick="addvalue('4')"' ">
+                    <input type="text" readonly value="5" onclick="addvalue('5')">
+                    <input type="text" readonly value="6" onclick="addvalue('6')">
+                    <input type="text" readonly value="-" onclick="addvalue('-')">
+                </div>
+                <div class="sp ">
+                    <input type="text" readonly value="1" onclick="addvalue('1')">
+                    <input type="text" readonly value="2" onclick="addvalue('2')">
+                    <input type="text" readonly value="3" onclick="addvalue('3')">
+                    <input type="text" readonly value="+" onclick="addvalue('+')">
+                </div>
+                <div class="sp ">
+                    <input type="text" readonly value="00"  onclick="addvalue('00')">
+                    <input type="text" readonly value="0"  onclick="addvalue('0')">
+                    <input id="equals" type="text" readonly value="=" >
+                </div>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

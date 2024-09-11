@@ -1,0 +1,82 @@
+.toast{
+    color: black;
+    background-color: white;
+    margin: 6px;
+    width: 250px;
+    padding: 15px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   display: flex;
+   align-items: center;
+   animation: animate 1s linear forwards;
+   
+}
+
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translateX(8%);
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+}
+
+.toast h1{
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 10px;
+
+}
+
+.toast::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #238500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: anim 5s ;
+
+}
+
+.error::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #ea1010;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: anim 5s ;
+
+}
+.invalid::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #e6e03d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: anim 5s ;
+
+}
+
+@keyframes anim {
+
+    0%{
+        width: 100%;
+    }
+    
+    100%{
+        width: 0%;
+    }
+
+  
+    
+}

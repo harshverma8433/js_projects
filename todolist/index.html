@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <div class="w-full min-h-screen bg-gradient-to-r from-slate-400 to-gray-200 flex justify-center items-center">
+        <div style="width: 450px;" class="flex flex-col pb-8 rounded-xl bg-white" >
+           <div id="main">
+                <div class="flex space-x-3 items-center pl-10 pt-4">
+                    <h1 class="text-xl font-bold">To Do List</h1>
+                    <i class="fa-sharp fa-solid fa-list fa-xl pt-1"></i>
+                </div>
+
+                <div id="ma" class=" w-96 ml-8 mt-4 mt-12  relative mb-4">
+                        <input id="inp" placeholder="Add your Text..." type="text" class="relative pl-4 bg-gray-200 h-10 w-96 rounded-full absolute focus:outline-0">
+                        <button id="btn" class="h-10 bg-orange-300 w-24 rounded-full absolute right-0">Add</button>
+                        
+                </div>
+
+
+           </div>
+
+           <button class="mx-36 rounded-full mt-4  py-3 bg-orange-300">Remove All</button>
+            
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

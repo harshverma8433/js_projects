@@ -1,0 +1,28 @@
+
+
+.box{
+    position: relative;;
+    width: 384px;   
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 15px 32px;
+    border-radius: 100px;
+    height: 40px;
+    background-color: rgb(229 231 235);
+
+}
+
+.box h1{
+    padding-left: 16px;
+}
+
+.icoms{
+    position: absolute;
+    right: 24px;
+    
+
+}
+
+.icoms i{
+    padding-left: 20px;
+}

@@ -1,0 +1,13 @@
+// completed
+password generator 
+weather
+quiz
+notes
+Quotes
+
+
+// not completed
+to do list
+Age calculator
+Qr code
+Calculator
